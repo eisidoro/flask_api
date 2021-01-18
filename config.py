@@ -7,7 +7,7 @@ class Config(object):
 	TEMPLATE_FOLDER	= os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
 	ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 	APP = None
-	SQLALCHEMY_DATABASE_URI = 'postgresql://eisidoro:12345@localhost:5432/postgres'
+	SQLALCHEMY_DATABASE_URI = 'mysql+mysqldb://root:12345@localhost:3306/flask'
 
 class DevelopmentConfig(Config):
 	TESTING	=	True
