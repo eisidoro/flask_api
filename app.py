@@ -24,7 +24,7 @@ def create_app(config_name):
     db = SQLAlchemy(config.APP)
     
     # start admin
-    app.config['FLASK_ADMIN_SWATCH'] = 'simplex'
+    app.config['FLASK_ADMIN_SWATCH'] = 'united'
     start_views(app, db);
     
     db.init_app(app)
