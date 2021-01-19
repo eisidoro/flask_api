@@ -1,4 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm import relationship
 from config import app_config, app_active
 
 from model.User import User
@@ -35,3 +36,5 @@ class Product(db.Model):
         db.ForeignKey(Category.id),
         nullable = False
     )
+    usuario = relationship(User)
+    categoria = relationship(Category)
